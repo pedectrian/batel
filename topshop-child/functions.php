@@ -38,7 +38,7 @@ class Batel {
 }
 $batel = new Batel();
 
-add_action( 'init', [$batel, 'addCustomizerOptions'] );
+add_action( 'init', array($batel, 'addCustomizerOptions') );
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 ?>
