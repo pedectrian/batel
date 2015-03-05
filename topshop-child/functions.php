@@ -7,7 +7,7 @@ class Batel {
 
         add_action( 'after_setup_theme', array( $this, 'batelSetup' ) );
 
-        add_action( 'batel_header', array($this, 'batelSiteBranding', 20 ) );
+        add_action( 'batel_header', array( $this, 'batelSiteBranding', 20 ) );
 
         add_action( 'init', array( $this, 'addCustomizerOptions' ) );
         add_action( 'customizer_library_styles', array( $this, 'customizerBuildStyles' ) );
@@ -20,10 +20,7 @@ class Batel {
     public function batelSiteBranding() {
         if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
             jetpack_the_site_logo();
-        } else { ?>
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-        <?php }
+        } else { }
     }
 
     public function addCustomizerOptions()
