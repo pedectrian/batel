@@ -36,7 +36,7 @@ class Batel {
             'default' => '#90c962',
         );
 
-        $customizer_library = Customizer_Library::Instance();
+        $customizer_library = \Customizer_Library::Instance();
         $customizer_library->add_options( $options );
     }
 
