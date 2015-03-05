@@ -13,11 +13,11 @@ class Batel {
         add_action( 'customizer_library_styles', array( $this, 'customizerBuildStyles' ) );
     }
 
-    protected function batelSetup() {
+    public function batelSetup() {
         add_theme_support( 'site-logo' );
     }
 
-    protected function batelSiteBranding() {
+    public function batelSiteBranding() {
         if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
             jetpack_the_site_logo();
         } else { ?>
@@ -40,7 +40,7 @@ class Batel {
         $customizer_library->add_options( $options );
     }
 
-    protected function customizerBuildStyles()
+    public function customizerBuildStyles()
     {
         $color = 'batel-header-background-color';
         $bgcolormod = get_theme_mod( $color, customizer_library_get_default( $color ) );
