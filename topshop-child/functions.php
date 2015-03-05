@@ -41,19 +41,17 @@ class Batel {
         $color = 'batel-header-background-color';
         $bgcolormod = get_theme_mod( $color, customizer_library_get_default( $color ) );
 
-        if ( $bgcolormod !== customizer_library_get_default( $color ) ) {
 
-            $sancolor = sanitize_hex_color( $bgcolormod );
+        $sancolor = sanitize_hex_color( $bgcolormod );
 
-            Customizer_Library_Styles()->add( array(
-                'selectors' => array(
-                    '#masthead',
-                ),
-                'declarations' => array(
-                    'background-color' => $sancolor
-                )
-            ) );
-        }
+        Customizer_Library_Styles()->add( array(
+            'selectors' => array(
+                '#masthead',
+            ),
+            'declarations' => array(
+                'background-color' => $sancolor
+            )
+        ) );
     }
 }
 $batel = new Batel();
