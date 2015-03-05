@@ -21,6 +21,24 @@ if ( ! function_exists( 'batel_setup' ) ) {
     }
 }
 
+class Batel {
+    public function addCustomizerOptions()
+    {
+        $options['batel-header-background-color'] = array(
+            'id' => 'batel-header-background-color',
+            'label'   => __( 'Batel header background Color', 'batel' ),
+            'section' => 'topshop-styling',
+            'type'    => 'color',
+            'default' => '#90c962',
+        );
+
+        $customizer_library = Customizer_Library::Instance();
+        $customizer_library->add_options( $options );
+    }
+}
+$batel = new Batel();
+
+add_action( 'init', [$batel, 'addCustomizerOptions'] );
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 ?>
