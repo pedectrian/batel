@@ -35,10 +35,32 @@ class Batel {
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
     }
+
+    public function customizerBuildStyles()
+    {
+        $color = 'batel-header-background-color';
+        $bgcolormod = get_theme_mod( $color, customizer_library_get_default( $color ) );
+
+        if ( $bgcolormod !== customizer_library_get_default( $color ) ) {
+
+            $sancolor = sanitize_hex_color( $bgcolormod );
+
+            Customizer_Library_Styles()->add( array(
+                'selectors' => array(
+                    '#masthead',
+                ),
+                'declarations' => array(
+                    'background-color' => $sancolor
+                )
+            ) );
+        }
+    }
 }
 $batel = new Batel();
 
-add_action( 'init', array($batel, 'addCustomizerOptions') );
+add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
+add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
+
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 ?>
