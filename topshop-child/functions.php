@@ -1,28 +1,27 @@
 <?php
-
-namespace Pedectrian\Batel;
-
-class Batel {
-    public function __construct() {
-
-        add_action( 'after_setup_theme', array( $this, 'batelSetup' ) );
-
-        add_action( 'batel_header', array( $this, 'batelSiteBranding', 20 ) );
-
-        add_action( 'init', array( $this, 'addCustomizerOptions' ) );
-        add_action( 'customizer_library_styles', array( $this, 'customizerBuildStyles' ) );
-    }
-
-    public function batelSetup() {
-        add_theme_support( 'site-logo' );
-    }
-
-    public function batelSiteBranding() {
+if ( ! function_exists( 'batel_site_branding' ) ) {
+    /**
+     * Display Site Branding
+     * @since  1.0.0
+     * @return void
+     */
+    function batel_site_branding() {
         if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
             jetpack_the_site_logo();
-        } else { }
+        } else { ?>
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+        <?php }
     }
+}
 
+if ( ! function_exists( 'batel_setup' ) ) {
+    function batel_setup() {
+        add_theme_support( 'site-logo' );
+    }
+}
+
+class Batel {
     public function addCustomizerOptions()
     {
         $options['batel-header-background-color'] = array(
@@ -33,7 +32,7 @@ class Batel {
             'default' => '#90c962',
         );
 
-        $customizer_library = \Customizer_Library::Instance();
+        $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
     }
 
@@ -48,6 +47,7 @@ class Batel {
         Customizer_Library_Styles()->add( array(
             'selectors' => array(
                 '#masthead',
+                '.site-top-bar .site-container',
                 '.topshop-header-layout-standard .site-top-bar-left',
                 '.topshop-header-layout-standard .site-top-bar-right',
             ),
@@ -58,4 +58,10 @@ class Batel {
     }
 }
 $batel = new Batel();
+
+add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
+add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
+
+add_action( 'after_setup_theme', 'batel_setup' );
+add_action( 'batel_header', 'batel_site_branding', 20 );
 ?>
