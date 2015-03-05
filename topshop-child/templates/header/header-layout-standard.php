@@ -37,7 +37,9 @@
 
 <div class="site-container">
 
-    <?php do_action( 'batel_header' ); ?>
+    <div class="site-header-left">
+        <?php do_action( 'batel_header' ); ?>
+    </div><!-- .site-branding -->
     
     <div class="site-header-right">
         
