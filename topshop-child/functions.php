@@ -51,7 +51,8 @@ class Batel {
         Customizer_Library_Styles()->add( array(
             'selectors' => array(
                 '#masthead',
-                '.site-top-bar .site-container'
+                '.topshop-header-layout-standard .site-top-bar-left',
+                '.topshop-header-layout-standard .site-top-bar-right',
             ),
             'declarations' => array(
                 'background-color' => $sancolor
