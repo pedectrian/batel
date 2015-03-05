@@ -6,7 +6,6 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
      * @return void
      */
     function batel_site_branding() {
-        die('asdf');
         if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
             jetpack_the_site_logo();
         } else { ?>
@@ -18,8 +17,6 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
 
 if ( ! function_exists( 'batel_setup' ) ) {
     function batel_setup() {
-
-        die('3323');
         add_theme_support( 'site-logo' );
     }
 }
