@@ -17,5 +17,12 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
     }
 }
 
+if ( ! function_exists( 'batel_setup' ) ) {
+    function batel_setup() {
+        add_theme_support( 'site-logo' );
+    }
+}
+
+add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 ?>
