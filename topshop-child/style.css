@@ -8,5 +8,5 @@ Template: topshop
 @import url("../topshop/style.css");
 
 .widget_nav_menu ul > ul > li{
-    margin-left: 15px !important;
+    padding-left: 15px !important;
 }
