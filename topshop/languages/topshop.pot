@@ -259,3 +259,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://automattic.com/"
 msgstr ""
+
+msgid "My Account"
+msgstr ""
+
+msgid "Checkout"
+msgstr ""
