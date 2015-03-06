@@ -12,11 +12,11 @@ Template: topshop
 }
 
 .products li.type-product img{
-    height: 200px;
-    width: auto;
-    margin: 0 auto;
+    height: 200px !important;
+    width: auto !important;
+    margin: 0 auto !important;
 }
 
 .woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
-    font-size: 15px;
+    font-size: 15px !important;
 }
