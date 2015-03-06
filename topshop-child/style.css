@@ -26,3 +26,16 @@ Template: topshop
     text-transform: none !important;
     padding: 10px !important;
 }
+
+.woocommerce div.product div.images img {
+    width: auto !important;
+    height: 350px !important;
+}
+
+.woocommerce #content div.product .product_title,
+.woocommerce div.product .product_title,
+.woocommerce-page #content div.product .product_title,
+.woocommerce-page div.product .product_title {
+    font-size: 21px;
+    line-height: 23px
+}
