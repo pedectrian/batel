@@ -80,5 +80,5 @@ add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' 
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 
-add_filter( 'add_to_cart_text', array( $batel, 'batelCustomCartButtonText' ) );    // < 2.1
+add_filter( 'woocommerce_product_single_add_to_cart_text', array( $batel, 'batelCustomCartButtonText' ) );    // < 2.1
 ?>
