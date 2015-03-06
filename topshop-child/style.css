@@ -7,6 +7,6 @@ Template: topshop
 
 @import url("../topshop/style.css");
 
-.sub_menu li{
+body{
     background: red !important;
 }
