@@ -7,6 +7,6 @@ Template: topshop
 
 @import url("../topshop/style.css");
 
-.widget-area ul > ul > li{
-    padding-left: 15px !important;
+.widget-area .widget ul ul{
+    margin-left: 15px !important;
 }
