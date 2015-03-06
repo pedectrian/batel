@@ -18,6 +18,7 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
 if ( ! function_exists( 'batel_setup' ) ) {
     function batel_setup() {
         add_theme_support( 'site-logo' );
+        load_child_theme_textdomain( 'batel', get_stylesheet_directory() . '/languages' );
     }
 }
 
@@ -55,13 +56,29 @@ class Batel {
                 'background-color' => $sancolor
             )
         ) );
+
+    }
+
+    public function batelCustomCartButtonText()
+    {
+
+        return __( 'Add to cart', 'batel' );
+
     }
 }
 $batel = new Batel();
 
+
+function woo_custom_cart_button_text() {
+
+
+
+}
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
+
+add_filter( 'add_to_cart_text', array( $batel, 'batelCustomCartButtonText' ) );    // < 2.1
 ?>
