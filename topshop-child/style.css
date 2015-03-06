@@ -20,3 +20,9 @@ Template: topshop
 .woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
     font-size: 15px !important;
 }
+
+.button.product_type_simple {
+    font-size: 12px !important;
+    text-transform: none !important;
+    padding: 10px !important;
+}
