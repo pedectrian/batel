@@ -26,7 +26,7 @@ if ( ! function_exists( 'batel_setup' ) ) {
 class Batel {
     public function addCustomizerOptions($wpCustomizer)
     {
-//        require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
+        require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
 //        $options['batel-header-background-color'] = array(
 //            'id' => 'batel-header-background-color',
 //            'label'   => __( 'Batel header background Color', 'batel' ),
