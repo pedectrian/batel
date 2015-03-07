@@ -38,12 +38,6 @@ class Batel {
 
     }
 
-    function removeCustomizerOptions(){
-        global $wp_customize;
-
-        $wp_customize->remove_section('topshop-social');
-    }
-
     public function customizerBuildStyles()
     {
         $color = 'batel-header-background-color';
@@ -69,8 +63,13 @@ class Batel {
 $batel = new Batel();
 
 
+function removeCustomizerOptions(){
+    global $wp_customize;
+
+    $wp_customize->add_section('topshop-social');
+}
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
-add_action( 'init', array( $batel, 'removeCustomizerOptions' ),  40 );
+add_action( 'customize_register', 'removeCustomizerOptions' ),  40 );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
