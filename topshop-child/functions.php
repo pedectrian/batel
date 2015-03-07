@@ -35,6 +35,8 @@ class Batel {
 
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
+
+        $customizer_library->remove_section('topshop-social');
     }
 
     public function customizerBuildStyles()
