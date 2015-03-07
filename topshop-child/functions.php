@@ -66,7 +66,7 @@ $batel = new Batel();
 function removeCustomizerOptions(){
 
     $customizer_library = Customizer_Library::Instance();
-    $customizer_library->get_options();
+    var_dump($customizer_library->get_options()); die();
 }
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
 add_action( 'customize_register', 'removeCustomizerOptions' );
