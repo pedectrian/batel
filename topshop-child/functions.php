@@ -39,6 +39,7 @@ class Batel {
     public function addCustomizerOptions($wpCustomizer)
     {
         require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
+        require_once dirname( __FILE__ ) . '/customizer/controls/arbitrary.php';
 //        $options['batel-header-background-color'] = array(
 //            'id' => 'batel-header-background-color',
 //            'label'   => __( 'Batel header background Color', 'batel' ),
@@ -47,12 +48,6 @@ class Batel {
 //            'default' => '#90c962',
 //        );
 //
-//        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
-//            'label'    => __( 'General layout', 'batel' ),
-//            'section'  => 'batel_layout',
-//            'settings' => 'topshop-social',
-//            'priority' => 100,
-//        ) ) );
 
         $wpCustomizer->add_section( 'batel_layout' , array(
             'title'      	=> __( 'Layout', 'batel' ),
@@ -71,13 +66,11 @@ class Batel {
             'priority' => 1,
         ) ) );
 //
-//        $wp_customize->add_control( new Arbitrary_Storefront_Control( $wp_customize, 'storefront_divider', array(
-//            'section'  	=> 'storefront_layout',
-//            'type' 		=> 'divider',
-//            'priority' 	=> 2,
-////        ) ) );
-//        $customizer_library = Customizer_Library::Instance();
-//        $customizer_library->add_options( array() );
+        $wpCustomizer->add_control( new ArbitraryBatelControl( $wpCustomizer, 'batel_devider', array(
+            'section'  	=> 'batel_layout',
+            'type' 		=> 'divider',
+            'priority' 	=> 2,
+        ) ) );
 
     }
 
