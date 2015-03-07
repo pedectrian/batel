@@ -66,6 +66,7 @@ $batel = new Batel();
 function removeCustomizerOptions(){
 
     $customizer_library = Customizer_Library::Instance();
+    $newOptions = [];
 
     foreach ($customizer_library->get_options() as $key => $options) {
 
@@ -76,11 +77,14 @@ function removeCustomizerOptions(){
                 }
             }
         }
+
+        $newOptions[] = $options;
     }
-    
+
+    $customizer_library->option = $options;
 }
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
-add_action( 'customize_register', 'removeCustomizerOptions' );
+add_action( 'init', 'removeCustomizerOptions', 40);
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
