@@ -67,8 +67,16 @@ function removeCustomizerOptions(){
 
     $customizer_library = Customizer_Library::Instance();
 
-    foreach ($customizer_library->get_options() as $options) {
+    foreach ($customizer_library->get_options() as $key => $options) {
         print_r($options);
+
+        if (isset($options[0])) {
+            foreach ($options as $sectionKey => $section) {
+                if (isset($section['id']) && $section['id'] == 'topshop-social') {
+                    unset($options[$sectionKey]);
+                }
+            }
+        }
     }
 
     die();
