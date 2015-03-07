@@ -23,6 +23,19 @@ if ( ! function_exists( 'batel_setup' ) ) {
     }
 }
 
+function batel_sanitize_layout( $input ) {
+    $valid = array(
+        'right' => 'Right',
+        'left'  => 'Left',
+    );
+
+    if ( array_key_exists( $input, $valid ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
 function batel_layout_class( $classes ) {
     $layout = get_theme_mod( 'batel_layout' );
 
@@ -56,7 +69,7 @@ class Batel {
 
         $wp_customize->add_setting( 'batel_layout', array(
             'default'    		=> 'right',
-            'sanitize_callback' => 'storefront_sanitize_layout',
+            'sanitize_callback' => 'batel_sanitize_layout',
         ) );
 
         $wp_customize->add_control( new LayoutPickerBatelControl( $wp_customize, 'batel_layout', array(
@@ -64,12 +77,6 @@ class Batel {
             'section'  => 'batel_layout',
             'settings' => 'batel_layout',
             'priority' => 1,
-        ) ) );
-//
-        $wp_customize->add_control( new ArbitraryBatelControl( $wp_customize, 'batel_devider', array(
-            'section'  	=> 'batel_layout',
-            'type' 		=> 'divider',
-            'priority' 	=> 2,
         ) ) );
 
     }
