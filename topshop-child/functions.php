@@ -70,7 +70,7 @@ $batel = new Batel();
 
 
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
-add_action( 'customize_register', 'remove_styles_sections', 20 );
+add_action( 'customize_register', array( $batel, 'removeCustomizerOptions' ),  20 );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
