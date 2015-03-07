@@ -36,7 +36,7 @@ function batel_layout_class( $classes ) {
 }
 
 class Batel {
-    public function addCustomizerOptions($wpCustomizer)
+    public function addCustomizerOptions($wp_customize)
     {
         require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
         require_once dirname( __FILE__ ) . '/customizer/controls/arbitrary.php';
@@ -49,24 +49,24 @@ class Batel {
 //        );
 //
 
-        $wpCustomizer->add_section( 'batel_layout' , array(
+        $wp_customize->add_section( 'batel_layout' , array(
             'title'      	=> __( 'Layout', 'batel' ),
             'priority'   	=> 50,
         ) );
 
-        $wpCustomizer->add_setting( 'batel_layout', array(
+        $wp_customize->add_setting( 'batel_layout', array(
             'default'    		=> 'right',
             'sanitize_callback' => 'storefront_sanitize_layout',
         ) );
 
-        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
+        $wp_customize->add_control( new LayoutPickerBatelControl( $wp_customize, 'batel_layout', array(
             'label'    => __( 'General layout', 'batel' ),
             'section'  => 'batel_layout',
             'settings' => 'batel_layout',
             'priority' => 1,
         ) ) );
 //
-        $wpCustomizer->add_control( new ArbitraryBatelControl( $wpCustomizer, 'batel_devider', array(
+        $wp_customize->add_control( new ArbitraryBatelControl( $wp_customize, 'batel_devider', array(
             'section'  	=> 'batel_layout',
             'type' 		=> 'divider',
             'priority' 	=> 2,
