@@ -36,7 +36,12 @@ class Batel {
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
 
-        $customizer_library->remove_section('topshop-social');
+    }
+
+    function removeCustomizerOptions(){
+        global $wp_customize;
+
+        $wp_customize->remove_section('topshop-social');
     }
 
     public function customizerBuildStyles()
@@ -64,12 +69,8 @@ class Batel {
 $batel = new Batel();
 
 
-function woo_custom_cart_button_text() {
-
-
-
-}
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
+add_action( 'customize_register', 'remove_styles_sections', 20 );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
