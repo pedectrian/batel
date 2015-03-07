@@ -66,10 +66,11 @@ $batel = new Batel();
 function removeCustomizerOptions(){
     global $wp_customize;
 
+    var_dump($wp_customize); die();
     $wp_customize->add_section('topshop-social');
 }
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
-add_action( 'customize_register', 'removeCustomizerOptions',  40 );
+add_action( 'customize_register', 'removeCustomizerOptions' );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
