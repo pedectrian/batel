@@ -66,7 +66,7 @@ $batel = new Batel();
 function removeCustomizerOptions(){
 
     $customizer_library = Customizer_Library::Instance();
-    $newOptions = [];
+    $newOptions = array();
 
     foreach ($customizer_library->get_options() as $key => $options) {
 
