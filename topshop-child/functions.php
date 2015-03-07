@@ -23,6 +23,18 @@ if ( ! function_exists( 'batel_setup' ) ) {
     }
 }
 
+function batel_layout_class( $classes ) {
+    $layout = get_theme_mod( 'batel_layout' );
+
+    if ( '' == $layout ) {
+        $layout = 'right';
+    }
+
+    $classes[] = $layout . '-sidebar';
+
+    return $classes;
+}
+
 class Batel {
     public function addCustomizerOptions($wpCustomizer)
     {
@@ -100,4 +112,5 @@ add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' 
 
 add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
+add_filter( 'body_class', 'batel_layout_class' );
 ?>
