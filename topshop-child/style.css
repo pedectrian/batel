@@ -30,6 +30,7 @@ Template: topshop
 .woocommerce div.product div.images img {
     width: auto !important;
     height: 350px !important;
+    margin: 0 auto !important;
 }
 
 .woocommerce #content div.product .product_title,
