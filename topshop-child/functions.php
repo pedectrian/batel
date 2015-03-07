@@ -42,20 +42,20 @@ class Batel {
 //            'priority' => 100,
 //        ) ) );
 
-        $wpCustomizer->add_section( 'storefront_layout' , array(
-            'title'      	=> __( 'Layout', 'storefront' ),
+        $wpCustomizer->add_section( 'batel_layout' , array(
+            'title'      	=> __( 'Layout', 'batel' ),
             'priority'   	=> 50,
         ) );
 
-        $wpCustomizer->add_setting( 'storefront_layout', array(
+        $wpCustomizer->add_setting( 'batel_layout', array(
             'default'    		=> 'right',
             'sanitize_callback' => 'storefront_sanitize_layout',
         ) );
 
-        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'storefront_layout', array(
-            'label'    => __( 'General layout', 'storefront' ),
-            'section'  => 'storefront_layout',
-            'settings' => 'storefront_layout',
+        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
+            'label'    => __( 'General layout', 'batel' ),
+            'section'  => 'batel_layout',
+            'settings' => 'batel_layout',
             'priority' => 1,
         ) ) );
 //
@@ -65,7 +65,7 @@ class Batel {
 //            'priority' 	=> 2,
 //        ) ) );
         $customizer_library = Customizer_Library::Instance();
-        $customizer_library->add_options( $options );
+        $customizer_library->add_options( array() );
 
     }
 
