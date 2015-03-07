@@ -36,12 +36,13 @@ class Batel {
         );
 
         $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
-            'label'    => __( 'General layout', 'storefront' ),
+            'label'    => __( 'General layout', 'batel' ),
             'section'  => 'batel_layout',
             'settings' => 'batel_layout',
-            'priority' => 1,
+            'priority' => 30,
         ) ) );
 
+        $wpCustomizer->remove_section('topshop_social');
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
 
