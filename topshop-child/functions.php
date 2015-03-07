@@ -67,8 +67,8 @@ function removeCustomizerOptions(){
 
     $customizer_library = Customizer_Library::Instance();
 
-    foreach ($customizer_library->get_options() as $name => $options) {
-        print_r($name, $options);
+    foreach ($customizer_library->get_options() as $options) {
+        print_r($options);
     }
 
     die();
