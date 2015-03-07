@@ -76,10 +76,8 @@ function removeCustomizerOptions(){
                 }
             }
         }
-        print_r($options);
     }
-
-    die();
+    
 }
 add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
 add_action( 'customize_register', 'removeCustomizerOptions' );
