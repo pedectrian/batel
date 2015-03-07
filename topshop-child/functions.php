@@ -26,23 +26,44 @@ if ( ! function_exists( 'batel_setup' ) ) {
 class Batel {
     public function addCustomizerOptions($wpCustomizer)
     {
-        require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
-        $options['batel-header-background-color'] = array(
-            'id' => 'batel-header-background-color',
-            'label'   => __( 'Batel header background Color', 'batel' ),
-            'section' => 'topshop-styling',
-            'type'    => 'color',
-            'default' => '#90c962',
-        );
+//        require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
+//        $options['batel-header-background-color'] = array(
+//            'id' => 'batel-header-background-color',
+//            'label'   => __( 'Batel header background Color', 'batel' ),
+//            'section' => 'topshop-styling',
+//            'type'    => 'color',
+//            'default' => '#90c962',
+//        );
+//
+//        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
+//            'label'    => __( 'General layout', 'batel' ),
+//            'section'  => 'batel_layout',
+//            'settings' => 'topshop-social',
+//            'priority' => 100,
+//        ) ) );
 
-        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
-            'label'    => __( 'General layout', 'batel' ),
-            'section'  => 'batel_layout',
-            'settings' => 'topshop-social',
-            'priority' => 100,
+        $wpCustomizer->add_section( 'storefront_layout' , array(
+            'title'      	=> __( 'Layout', 'storefront' ),
+            'priority'   	=> 50,
+        ) );
+
+        $wpCustomizer->add_setting( 'storefront_layout', array(
+            'default'    		=> 'right',
+            'sanitize_callback' => 'storefront_sanitize_layout',
+        ) );
+
+        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wp_customize, 'storefront_layout', array(
+            'label'    => __( 'General layout', 'storefront' ),
+            'section'  => 'storefront_layout',
+            'settings' => 'storefront_layout',
+            'priority' => 1,
         ) ) );
-
-        $wpCustomizer->remove_section('topshop_social');
+//
+//        $wp_customize->add_control( new Arbitrary_Storefront_Control( $wp_customize, 'storefront_divider', array(
+//            'section'  	=> 'storefront_layout',
+//            'type' 		=> 'divider',
+//            'priority' 	=> 2,
+//        ) ) );
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
 
