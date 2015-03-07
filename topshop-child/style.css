@@ -39,3 +39,8 @@ Template: topshop
     font-size: 21px;
     line-height: 23px
 }
+
+.woocommerce #container, .woocommerce-page #container, .content-area {
+    float: right !important;
+    padding: 0 0 0 2%;
+}
