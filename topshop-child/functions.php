@@ -52,7 +52,7 @@ class Batel {
             'sanitize_callback' => 'storefront_sanitize_layout',
         ) );
 
-        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wp_customize, 'storefront_layout', array(
+        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'storefront_layout', array(
             'label'    => __( 'General layout', 'storefront' ),
             'section'  => 'storefront_layout',
             'settings' => 'storefront_layout',
