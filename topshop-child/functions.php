@@ -63,9 +63,9 @@ class Batel {
 //            'section'  	=> 'storefront_layout',
 //            'type' 		=> 'divider',
 //            'priority' 	=> 2,
-//        ) ) );
-        $customizer_library = Customizer_Library::Instance();
-        $customizer_library->add_options( array() );
+////        ) ) );
+//        $customizer_library = Customizer_Library::Instance();
+//        $customizer_library->add_options( array() );
 
     }
 
