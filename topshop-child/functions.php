@@ -1,4 +1,7 @@
 <?php
+
+require_once dirname( __FILE__ ) . '/customizer/controls/layout.php';
+
 if ( ! function_exists( 'batel_site_branding' ) ) {
     /**
      * Display Site Branding
@@ -23,7 +26,7 @@ if ( ! function_exists( 'batel_setup' ) ) {
 }
 
 class Batel {
-    public function addCustomizerOptions()
+    public function addCustomizerOptions($wpCustomizer)
     {
         $options['batel-header-background-color'] = array(
             'id' => 'batel-header-background-color',
@@ -32,6 +35,13 @@ class Batel {
             'type'    => 'color',
             'default' => '#90c962',
         );
+
+        $wpCustomizer->add_control( new LayoutPickerBatelControl( $wpCustomizer, 'batel_layout', array(
+            'label'    => __( 'General layout', 'storefront' ),
+            'section'  => 'batel_layout',
+            'settings' => 'batel_layout',
+            'priority' => 1,
+        ) ) );
 
         $customizer_library = Customizer_Library::Instance();
         $customizer_library->add_options( $options );
@@ -62,29 +72,9 @@ class Batel {
 }
 $batel = new Batel();
 
+//add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
 
-function removeCustomizerOptions(){
-
-    $customizer_library = Customizer_Library::Instance();
-    $newOptions = array();
-
-    foreach ($customizer_library->get_options() as $key => $options) {
-
-        if (isset($options[0]) && is_array($options[0])) {
-            foreach ($options as $sectionKey => $section) {
-                if (isset($section['id']) && $section['id'] == 'topshop-social') {
-                    unset($options[$sectionKey]);
-                }
-            }
-        }
-
-        $newOptions[] = $options;
-    }
-
-    $customizer_library->option = $options;
-}
-add_action( 'init', array( $batel, 'addCustomizerOptions' ) );
-add_action( 'init', 'removeCustomizerOptions', 40);
+add_action( 'customize_register', array( $batel, 'addCustomizerOptions') );
 add_action( 'customizer_library_styles', array( $batel, 'customizerBuildStyles' ) );
 
 add_action( 'after_setup_theme', 'batel_setup' );
