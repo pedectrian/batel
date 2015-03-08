@@ -53,6 +53,9 @@ ul.tabs {
     margin: 0;
     border-bottom: 1px solid #ccc;
 }
+ul.tabs br {
+    display: none;
+}
 ul.tabs li {display: inline-block;}
 ul.tabs a {
     display: block;
