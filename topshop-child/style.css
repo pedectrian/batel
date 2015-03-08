@@ -45,3 +45,30 @@ Template: topshop
     float: right !important;
     padding: 0 0 0 4%;
 }
+
+
+/* Tabs Styles */
+ul.tabs {
+    list-style: none;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+ul.tabs li {display: inline-block;}
+ul.tabs a {
+    display: block;
+    position: relative;
+    top: 1px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+ul.tabs a.active {
+    border-color: #ccc;
+    border-bottom-color: #fff;
+}
+section.tab {
+    display: none;
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+section.tab.active {display: block;}
