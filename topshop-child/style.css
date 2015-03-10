@@ -84,6 +84,7 @@ section.tab.active {display: block;}
     font-weight: bold;
 }
 
-.widget.woocommerce.widget_product_categories .product-categories li a:hover {
+.widget.woocommerce.widget_product_categories .product-categories li a:hover,
+.widget.woocommerce.widget_product_categories .product-categories li.current-cat a {
     color: #90C962;
 }
