@@ -69,7 +69,7 @@ ul.tabs a.active,
 ul.tabs li.active a,
 ul.tabs a:hover {
     border-color: #ccc;
-    border-bottom-color: #fff;
+    border-bottom-color: #fff !important;
     background: #90C962;
     color: #FFF;
 }
@@ -90,8 +90,8 @@ section.tab.active {display: block;}
 }
 
 .woocommerce-tabs .tabs li {
-    padding: 0;
+    padding: 0 !important;
 }
-.woocommerce-tabs .tabs li a{
-    padding: 10px;
+.woocommerce-tabs .tabs li a {
+    padding: 10px !important;;
 }
