@@ -78,3 +78,12 @@ section.tab {
     padding: 15px 0;
 }
 section.tab.active {display: block;}
+
+.widget.woocommerce.widget_product_categories .product-categories li a {
+    color: #000;
+    font-weight: bold;
+}
+
+.widget.woocommerce.widget_product_categories .product-categories li a:hover {
+    color: #90C962;
+}
