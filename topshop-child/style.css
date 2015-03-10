@@ -69,9 +69,9 @@ ul.tabs a.active,
 ul.tabs li.active a,
 ul.tabs a:hover {
     border-color: #ccc;
-    border-bottom-color: #fff !important;
+    border-bottom-color: #fff;
     background: #90C962;
-    color: #FFF;
+    color: #FFF !important;
 }
 section.tab {
     display: none;
