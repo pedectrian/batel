@@ -80,7 +80,6 @@ section.tab {
 section.tab.active {display: block;}
 
 .widget.woocommerce.widget_product_categories .product-categories li a {
-    color: #000;
     font-weight: bold;
 }
 
