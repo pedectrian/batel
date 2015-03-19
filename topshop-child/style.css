@@ -38,7 +38,7 @@ Template: topshop
 .woocommerce-page #content div.product .product_title,
 .woocommerce-page div.product .product_title {
     font-size: 21px;
-    line-height: 23px
+    line-height: 23px;
 }
 
 .woocommerce #container, .woocommerce-page #container, .content-area {
@@ -95,5 +95,11 @@ section.tab.active {display: block;}
 }
 .woocommerce-tabs .tabs li a {
     padding: 10px !important;
-    text-decoration: underline;
+}
+.metaslider {
+    margin-bottom: 30px !important;
+}
+
+#masthead {
+    background-image: url('images/ornament.png');
 }
