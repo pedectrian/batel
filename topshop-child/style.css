@@ -101,5 +101,6 @@ section.tab.active {display: block;}
 }
 
 #masthead {
-    background-image: url('images/ornament.png');
+    background: #90C962 url('images/ornament.png') 0 22px no-repeat !important;
+    background-size: 100% 232px !important;
 }
