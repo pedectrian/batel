@@ -99,6 +99,9 @@ section.tab.active {display: block;}
 .metaslider {
     margin-bottom: 30px !important;
 }
+.slider-wrapper {
+    background: #f1f1f1;
+}
 
 /*#masthead {*/
     /*background: #90C962 url('images/ornament.png') top right no-repeat !important;*/
