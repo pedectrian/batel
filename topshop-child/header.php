@@ -26,7 +26,7 @@ global $woocommerce;
 </header><!-- #masthead -->
 
 <?php if ( is_front_page() ) : ?>
-	<div class="slider-wrapper">
+	<div class="front-slider-wrapper">
 	    <?php get_template_part( '/templates/slider/homepage-slider' ); ?>
     </div>
 <?php endif; ?>
