@@ -100,7 +100,7 @@ section.tab.active {display: block;}
     margin-bottom: 30px !important;
 }
 
-#masthead {
-    background: #90C962 url('images/ornament.png') top right no-repeat !important;
-    background-size: 50% 232px !important;
-}
+/*#masthead {*/
+    /*background: #90C962 url('images/ornament.png') top right no-repeat !important;*/
+    /*background-size: 50% 232px !important;*/
+/*}*/
