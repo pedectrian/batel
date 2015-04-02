@@ -112,10 +112,10 @@ section.tab.active {display: block;}
     padding: 10px 15px;
     border-radius: 5px;
 }
-.widget_product_categories .product-categories > .cat-item .open{
+.widget_product_categories .product-categories > .cat-item .open,
+.widget_product_categories .product-categories > .cat-item .close {
     width: 25px;
     height: 25px;
-    content: "+";
     float: right;
     font-weight: bold;
     font-size: 20px;
