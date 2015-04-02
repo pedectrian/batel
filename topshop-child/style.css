@@ -149,3 +149,6 @@ section.tab.active {display: block;}
 .main-navigation a {
     font-weight: bold;
 }
+.home #tabs {
+    font-weight: bold;
+}
