@@ -113,11 +113,13 @@ section.tab.active {display: block;}
     border-radius: 5px;
 }
 .widget_product_categories .product-categories > .cat-item .count:after{
-    width: 15px;
-    height: 15px;
-    display: block;
-    background: red;
+    width: 10px;
+    height: 10px;
     content: "+";
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -5px;
 }
 
 .widget_product_categories .product-categories > .cat-item .children {
