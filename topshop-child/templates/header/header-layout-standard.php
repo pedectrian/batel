@@ -74,7 +74,12 @@
     <div class="clearboth"></div>
     
 </div>
-
+<script>
+    $(document).ready(function(){
+        $('.product-categories > .cat-item').append('<div class="open"></div>');
+        $('.product-categories > .cat-item > .open').on('click', function(){alert('asdf')})
+    })
+</script>
 <nav id="site-navigation" class="main-navigation nav-load<?php echo ( get_theme_mod( 'topshop-sticky-header', false ) ) ? ' header-stick' : ''; ?>" role="navigation">
     
     <div class="site-container">

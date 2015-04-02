@@ -14,16 +14,10 @@ global $woocommerce;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script>
-    $(document).ready(function(){
-        $('.product-categories > .cat-item').append('<div class="open"></div>');
-        $('.product-categories > .cat-item > .open').on('click', function(){alert('asdf')})
-    })
-</script>
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-asdfasdf
 <header id="masthead" class="site-header border-bottom topshop-header-layout-standard" role="banner">
     
     <?php get_template_part( '/templates/header/header-layout-standard' ); ?>
