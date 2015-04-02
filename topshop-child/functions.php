@@ -18,7 +18,7 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
 
 if ( ! function_exists( 'batel_setup' ) ) {
     function batel_setup() {
-        add_theme_support( 'site-logo' );
+        add_theme_support( 'site-logo', 150, 150, 0 );
         load_child_theme_textdomain( 'batel', get_stylesheet_directory() . '/languages' );
     }
 }
