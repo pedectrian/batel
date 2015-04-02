@@ -16,8 +16,10 @@ global $woocommerce;
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script>
     $(document).ready(function(){
-        $('.product-categories > .cat-item > .count:after').on('click', function(){alert('asdf')})
+        $('.product-categories > .cat-item').append('<div class="open"></div>');
+        $('.product-categories > .cat-item > .open').on('click', function(){alert('asdf')})
     })
+</script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

@@ -112,7 +112,7 @@ section.tab.active {display: block;}
     padding: 10px 15px;
     border-radius: 5px;
 }
-.widget_product_categories .product-categories > .cat-item .count:after{
+.widget_product_categories .product-categories > .cat-item .open{
     width: 10px;
     height: 10px;
     content: "+";
@@ -122,7 +122,7 @@ section.tab.active {display: block;}
     margin-top: -5px;
 }
 
-.widget_product_categories .product-categories > .cat-item .count:after:hover {
+.widget_product_categories .product-categories > .cat-item .open:hover {
     cursor: pointer;
 }
 
