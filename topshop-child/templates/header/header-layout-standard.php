@@ -77,9 +77,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.product-categories > .cat-item').append('<div class="open">+</div>');
-        $('.product-categories > .cat-item > .open').on('click', function(){
+        $('.product-categories > .cat-item > .count').after('<div class="open">+</div>');
+        $('.product-categories > .cat-item > .open, .product-categories > .cat-item > .close').on('click', function(){
             $(this).parent().toggleClass('current-cat');
+            $(this).toggleClass('.open');
+            $(this).toggleClass('.close');
         })
     })
 </script>
