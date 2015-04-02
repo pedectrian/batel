@@ -78,7 +78,7 @@ class Batel {
             'settings' => 'batel_layout',
             'priority' => 1,
         ) ) );
-
+        add_theme_support( 'site-logo', array('size' => 'full') );
     }
 
     public function customizerBuildStyles()
