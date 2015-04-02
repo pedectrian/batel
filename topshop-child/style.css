@@ -127,6 +127,8 @@ section.tab.active {display: block;}
 }
 
 .widget_product_categories .product-categories > .cat-item .open:hover,
+.widget_product_categories .product-categories > .cat-item .close:hover,
+.widget_product_categories .product-categories > .cat-item.current-cat .open,
 .widget_product_categories .product-categories > .cat-item.current-cat .open {
     cursor: pointer;
     background: #90C962;
