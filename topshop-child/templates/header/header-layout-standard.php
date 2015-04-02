@@ -81,14 +81,15 @@
         $('.product-categories > .cat-item > .open').on('click', function(){
             $(this).parent().toggleClass('current-cat');
             $(this).toggleClass('.open');
-            $(this).toggleClass('.close');
+            $(this).toggleClass('close');
 
             $(this).text('-');
-        })
+        });
+
         $('.product-categories > .cat-item > .close').on('click', function(){
             $(this).parent().toggleClass('current-cat');
             $(this).toggleClass('.open');
-            $(this).toggleClass('.close');
+            $(this).toggleClass('close');
 
             $(this).text('+');
         })
