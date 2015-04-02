@@ -77,8 +77,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.product-categories > .cat-item').append('<div class="open"></div>');
-        $('.product-categories > .cat-item > .open').on('click', function(){alert('asdf')})
+        $('.product-categories > .cat-item').append('<div class="open">+</div>');
+        $('.product-categories > .cat-item > .open').on('click', function(){
+            $(this).parent().toggleClass('current-cat');
+        })
     })
 </script>
 <nav id="site-navigation" class="main-navigation nav-load<?php echo ( get_theme_mod( 'topshop-sticky-header', false ) ) ? ' header-stick' : ''; ?>" role="navigation">
