@@ -106,8 +106,13 @@ section.tab.active {display: block;}
     background: #f1f1f1;
 }
 
+.widget_product_categories .product-categories > .cat-item{
+    display: block;
+    background: #F1F1F1;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
 
-/*#masthead {*/
-    /*background: #90C962 url('images/ornament.png') top right no-repeat !important;*/
-    /*background-size: 50% 232px !important;*/
-/*}*/
+.widget_product_categories .product-categories > .cat-item .children {
+    display: none;
+}
