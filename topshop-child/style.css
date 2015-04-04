@@ -158,7 +158,7 @@ section.tab.active {display: block;}
 }
 
 .topshop-header-layout-standard .site-top-bar-left {
-    width: 80% !important;
+    width: 82% !important;
 }
 .topshop-header-layout-standard .site-top-bar-left a{
     font-size: 14px !important;
@@ -170,5 +170,5 @@ section.tab.active {display: block;}
     font-weight: bold;
 }
 .topshop-header-layout-standard .site-top-bar-right {
-    width: 20% !important;
+    width: 18% !important;
 }
