@@ -100,7 +100,11 @@
         });
 
         $('.product-categories > .cat-item > .close').on('click', function(){
-            $(this).parent().toggleClass('current-cat');
+            if ($(this).parent().hasClass('current-cat-parent')) {
+                $(this).parent().toggleClass('current-cat-parent');
+            } else {
+                $(this).parent().toggleClass('current-cat');
+            }
             $(this).toggleClass('open');
             $(this).toggleClass('close');
         })
