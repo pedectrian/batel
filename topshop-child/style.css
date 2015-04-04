@@ -183,5 +183,5 @@ section.tab.active {display: block;}
     height: auto !important;
 }
 .site-top-bar-left-text {
-    font-size:  16px;
+    font-size: 16px !important;
 }
