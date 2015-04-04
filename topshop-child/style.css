@@ -134,12 +134,19 @@ section.tab.active {display: block;}
     background: #90C962;
 }
 
+.widget_product_categories .product-categories > .cat-item.current-cat .open .minus {
+    display: none;
+}
+.widget_product_categories .product-categories > .cat-item.current-cat .close .plus {
+    display: none;
+}
 .widget_product_categories .product-categories > .cat-item .children {
     display: none;
 }
 
 
-.widget_product_categories .product-categories > .cat-item.current-cat .children {
+.widget_product_categories .product-categories > .cat-item.current-cat .children,
+.widget_product_categories .product-categories > .cat-item.current-cat-parent .children {
     display: block;
 }
 
