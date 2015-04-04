@@ -158,7 +158,15 @@ section.tab.active {display: block;}
 }
 
 .topshop-header-layout-standard .site-top-bar-left {
-    width: 80% !important;;
+    width: 80% !important;
+}
+.topshop-header-layout-standard .site-top-bar-left a{
+    font-size: 14px !important;
+    color: #333 !important;
+}
+.topshop-header-layout-standard .site-top-bar-left a:hover,
+.topshop-header-layout-standard .site-top-bar-left .current-menu-item a {
+    color: #000 !important;
 }
 .topshop-header-layout-standard .site-top-bar-right {
     width: 20% !important;
