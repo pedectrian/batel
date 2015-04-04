@@ -1,6 +1,6 @@
 <?php global $woocommerce; ?>
 
-<?php if( get_theme_mod( 'topshop-show-header-top-bar', false ) ) : ?>
+<?php if( get_theme_mod( 'topshop-show-header-top-bar', true ) ) : ?>
     
     <div class="site-top-bar border-bottom">
         <div class="site-container">
