@@ -77,7 +77,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.product-categories > .cat-item > .count').after('<div class="open"><div class="plus">+</div><div class="minus">-</div></div>');
+        $('.product-categories > .cat-item > .count').each(function(){
+            var type = 'open';
+            if (
+               $(this).parent().hasClass('current-cat-parent') ||
+               $(this).parent().hasClass('current-cat')
+            ) {
+                type='close';
+            }
+
+            $(this).after('<div class="' + type + '"><div class="plus">+</div><div class="minus">-</div></div>');
+        });
 
         $('.product-categories > .cat-item > .open').on('click', function(){
             if ($(this).parent().hasClass('current-cat-parent')) {
