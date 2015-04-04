@@ -7,9 +7,11 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
      * @return void
      */
     function batel_site_branding() {
-        if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) {
-            jetpack_the_site_logo();
-        } else { ?>
+        if ( function_exists( 'jetpack_has_site_logo' ) && jetpack_has_site_logo() ) { ?>
+            <a href="http://batel-store.ru/" class="site-logo-link" rel="home" itemprop="url">
+                <img width="199" height="131" src="http://batel-store.ru/wp-content/uploads/2015/04/white-logo-v21.png" class="site-logo attachment-full" alt="white-logo-v2" data-size="full" itemprop="logo">
+            </a>
+       <?php } else { ?>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
         <?php }
@@ -78,7 +80,7 @@ class Batel {
             'settings' => 'batel_layout',
             'priority' => 1,
         ) ) );
-        add_theme_support( 'site-logo', array('size' => 'full') );
+
     }
 
     public function customizerBuildStyles()
