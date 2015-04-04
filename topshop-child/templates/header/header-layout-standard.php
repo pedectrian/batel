@@ -80,7 +80,7 @@
         $('.product-categories > .cat-item > .count').after('<div class="open"><div class="plus">+</div><div class="minus">-</div></div>');
 
         $('.product-categories > .cat-item > .open').on('click', function(){
-            if ($(this).parent().toggleClass('current-cat-parent');) {
+            if ($(this).parent().toggleClass('current-cat-parent')) {
                 $(this).parent().toggleClass('current-cat-parent');
             } else {
                 $(this).parent().toggleClass('current-cat');
