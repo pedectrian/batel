@@ -213,3 +213,9 @@ section.tab.active {display: block;}
 #site-navigation {
     margin: 10px 0;
 }
+#secondary {
+    display: none !important;
+}
+#container {
+    width: 100%;
+}
