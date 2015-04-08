@@ -242,15 +242,15 @@ section.tab.active {display: block;}
 }
 .site-header-right-link,
 .header-cart-amount{
-    display: block;
+    display: block !important;
 }
 .header-cart-checkout {
-    position: relative;
+    position: relative !important;
 }
 .header-cart-checkout .fa.fa-shopping-cart {
-    font-size: 70px;
-    color: #333;
-    position: absolute;
-    top: -49px;
-    right: -87px;
+    font-size: 70px !important;
+    color: #333 !important;
+    position: absolute !important;
+    top: -49px !important;
+    right: -87px !important;
 }
