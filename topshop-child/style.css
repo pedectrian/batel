@@ -102,9 +102,9 @@ section.tab.active {display: block;}
 .front-slider-wrapper > div {
     box-shadow: 0 2px 10px #333;
 }
-.front-slider-wrapper {
-    background: #f1f1f1;
-}
+/*.front-slider-wrapper {*/
+    /*background: #f1f1f1;*/
+/*}*/
 
 .widget_product_categories .product-categories > .cat-item{
     display: block;
@@ -187,7 +187,7 @@ section.tab.active {display: block;}
     box-shadow: none;
 }
 #site-navigation {
-    background: #f1f1f1 !important;
+    background: #fff !important;
 }
 
 .menu-mainmenu-container {
