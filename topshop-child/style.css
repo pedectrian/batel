@@ -234,3 +234,23 @@ section.tab.active {display: block;}
 .home .page-title {
     display: none;
 }
+
+/* Cart */
+
+.site-header-right {
+    padding-right: 100px !important;
+}
+.site-header-right-link,
+.header-cart-amount{
+    display: block;
+}
+.header-cart-checkout {
+    position: relative;
+}
+.header-cart-checkout .fa.fa-shopping-cart {
+    font-size: 70px;
+    color: #333;
+    position: absolute;
+    top: -49px;
+    right: -87px;
+}
