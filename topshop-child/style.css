@@ -217,5 +217,5 @@ section.tab.active {display: block;}
     display: none !important;
 }
 #container {
-    width: 100%;
+    width: 100% !important;
 }
