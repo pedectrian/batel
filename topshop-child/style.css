@@ -208,10 +208,10 @@ section.tab.active {display: block;}
     float: none !important;
 }
 .main-navigation {
-    text-align: center;
+    text-align: justify;
 }
 .main-navigation ul.nav-menu > li > a {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: normal;
     line-height: 16px;
 }
