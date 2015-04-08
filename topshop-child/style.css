@@ -179,8 +179,14 @@ section.tab.active {display: block;}
 .site-top-bar-left-text {
     font-size: 16px !important;
 }
-#masthead, .site-top-bar .site-container, .topshop-header-layout-standard .site-top-bar-left, .topshop-header-layout-standard .site-top-bar-right {
+#masthead {
     background-color: #f1f1f1 !important;
+}
+.site-top-bar .site-container,
+.topshop-header-layout-standard .site-top-bar-left,
+.topshop-header-layout-standard .site-top-bar-right,
+#masthead .site-container{
+    background: #fff;
 }
 .main-navigation,
 .site-header {
