@@ -193,6 +193,6 @@ section.tab.active {display: block;}
 }
 
 .site-top-bar-left {
-    width: 100%;
+    width: 100% !important;
     text-align: center;
 }
