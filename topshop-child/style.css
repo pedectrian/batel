@@ -180,8 +180,8 @@ section.tab.active {display: block;}
     font-size: 16px !important;
 }
 #masthead, .site-top-bar .site-container, .topshop-header-layout-standard .site-top-bar-left, .topshop-header-layout-standard .site-top-bar-right {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 #site-navigation {
-    backgroud: #90C962;
+    background: #90C962 !important;
 }
