@@ -183,7 +183,11 @@ section.tab.active {display: block;}
     background-color: #fff !important;
 }
 #site-navigation {
-    background: #90C962 !important;
+    background: #f1f1f1 !important;
+}
+
+{
+    backgroud: #90C962 !important;
 }
 .site-top-bar ul li a {
     text-transform: none;
