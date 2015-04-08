@@ -150,9 +150,6 @@ section.tab.active {display: block;}
     display: none !important;
 }
 
-.main-navigation a {
-    font-weight: bold;
-}
 .home #tabs {
     font-weight: bold;
 }
@@ -209,6 +206,14 @@ section.tab.active {display: block;}
 .main-navigation ul.nav-menu > li {
     display: inline-block !important;
     float: none !important;
+}
+.main-navigation {
+    text-align: center;
+}
+.main-navigation ul.nav-menu > li > a {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 16px;
 }
 #site-navigation {
     margin: 10px 0;
