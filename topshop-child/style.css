@@ -185,3 +185,6 @@ section.tab.active {display: block;}
 #site-navigation {
     background: #90C962 !important;
 }
+.site-top-bar ul li a {
+    text-transform: none;
+}
