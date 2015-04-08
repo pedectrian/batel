@@ -206,7 +206,6 @@ section.tab.active {display: block;}
 .main-navigation ul.nav-menu > li {
     display: inline-block !important;
     float: none !important;
-    width: 144px !important;
 }
 .main-navigation {
     text-align: center;
