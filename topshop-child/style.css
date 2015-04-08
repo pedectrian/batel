@@ -188,6 +188,8 @@ section.tab.active {display: block;}
 
 .menu-mainmenu-container {
     background: #90C962 !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 .site-top-bar ul li a {
     text-transform: none;
