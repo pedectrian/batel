@@ -208,7 +208,10 @@ section.tab.active {display: block;}
     float: none !important;
 }
 .main-navigation {
-    text-align: justify;
+    text-align: center;
+}
+.main-navigation a {
+    text-transform: capitalize !important;
 }
 .main-navigation ul.nav-menu > li > a {
     font-size: 17px;
@@ -227,4 +230,7 @@ section.tab.active {display: block;}
     border-right: 1px solid #CCC;
     box-shadow: 0 1px 2px #CCC;
     padding-top: 25px !important;
+}
+.home .page-title {
+    display: none;
 }
