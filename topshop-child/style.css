@@ -206,3 +206,6 @@ section.tab.active {display: block;}
     display: inline-block !important;
     float: none !important;
 }
+#site-navigation {
+    margin: 10px 0;
+}
