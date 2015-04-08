@@ -196,3 +196,7 @@ section.tab.active {display: block;}
     width: 100% !important;
     text-align: center;
 }
+.main-navigation ul.nav-menu > li {
+    display: inline-block !important;
+    float: none !important;
+}
