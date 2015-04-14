@@ -193,7 +193,7 @@ section.tab.active {display: block;}
     border-radius: 10px;
 }
 .site-top-bar ul li a {
-    /*text-transform: none;*/
+    color: #5A371F !important;
 }
 .site-top-bar-right {
     display: none;
@@ -206,7 +206,6 @@ section.tab.active {display: block;}
 .main-navigation ul.nav-menu > li {
     display: inline-block !important;
     float: none !important;
-    color: #5A371F;
 }
 .main-navigation {
     text-align: center;
