@@ -285,10 +285,14 @@ body {
     width: 275px;
 }
 .contact-col-right {
-    width: 325px;
+    width: 470px;
 }
 .contact-col-right,
 .contact-col-left {
     display: inline-block;
     vertical-align: top;
+}
+.contact-col-right img {
+    width: 215px !important;
+    margin-bottom: 10px !important;
 }
