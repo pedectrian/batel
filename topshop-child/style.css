@@ -281,3 +281,14 @@ body {
     height: 184px !important;
     width: 98% !important;
 }
+.contact-col-left {
+    width: 275px;
+}
+.contact-col-right {
+    width: 325px;
+}
+.contact-col-right,
+.contact-col-left {
+    display: inline-block;
+    vertical-align: top;
+}
