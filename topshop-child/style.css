@@ -260,3 +260,8 @@ section.tab.active {display: block;}
 .main-navigation ul ul {
     top: 55px !important;
 }
+
+body {
+    background: url('img/ornament.png') no-repeat top center;
+    background-attachment: fixed;
+}
