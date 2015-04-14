@@ -277,3 +277,7 @@ body {
     box-shadow: none !important;
 
 }
+.contact-form textarea {
+    height: 184px !important;
+    width: 98% !important;
+}
