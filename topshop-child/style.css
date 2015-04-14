@@ -264,7 +264,7 @@ section.tab.active {display: block;}
 body {
     background: url('img/ornament.png') no-repeat bottom center;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100%;
 }
 #content.site-content {
     max-width: 1096px;
