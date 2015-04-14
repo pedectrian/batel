@@ -160,7 +160,6 @@ section.tab.active {display: block;}
 
 .topshop-header-layout-standard .site-top-bar-left a{
     font-size: 14px !important;
-    color: #333 !important;
 }
 .topshop-header-layout-standard .site-top-bar-left a:hover,
 .topshop-header-layout-standard .site-top-bar-left .current-menu-item a {
