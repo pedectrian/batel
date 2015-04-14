@@ -266,3 +266,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+.site-container {
+    max-width: 1096px;
+}
