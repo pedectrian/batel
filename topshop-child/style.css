@@ -270,4 +270,10 @@ body {
     max-width: 1096px;
     background: #fff;
     box-shadow: 0 0 9px #000;
+    padding-top: 20px;
+}
+.page-template-default .widget-area,
+.page-template-default .content-area{
+    box-shadow: none !important;
+
 }
