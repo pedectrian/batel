@@ -165,7 +165,7 @@ section.tab.active {display: block;}
 .topshop-header-layout-standard .site-top-bar-left a:hover,
 .topshop-header-layout-standard .site-top-bar-left .current-menu-item a {
     color: #000 !important;
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 .product_type_grouped:hover {
     color: #fff !important;
@@ -215,7 +215,6 @@ section.tab.active {display: block;}
 }
 .main-navigation ul.nav-menu > li > a {
     font-size: 17px;
-    font-weight: normal;
     line-height: 16px;
 }
 #site-navigation {
