@@ -266,7 +266,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-.site-container {
+#content {
     max-width: 1096px;
     background: #fff;
 }
