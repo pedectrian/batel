@@ -266,8 +266,8 @@ body {
     background-attachment: fixed;
     background-size: contain;
 }
-#content {
+#content.site-content {
     max-width: 1096px;
     background: #fff;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 9px #000;
 }
