@@ -77,7 +77,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.product-categories > .cat-item > .count').each(function(){
+        $('.product-categories > .cat-item > .count, .widget_mgwoocommercebrands > ul > li > .count').each(function(){
             var type = 'open';
             if (
                $(this).parent().hasClass('current-cat-parent') ||
@@ -89,7 +89,7 @@
             $(this).after('<div class="' + type + '"><div class="plus">+</div><div class="minus">-</div></div>');
         });
 
-        $('.product-categories > .cat-item > .open').on('click', function(){
+        $('.open').on('click', function(){
             if ($(this).parent().hasClass('current-cat-parent')) {
                 $(this).parent().toggleClass('current-cat-parent');
             } else {
@@ -99,7 +99,7 @@
             $(this).toggleClass('close');
         });
 
-        $('.product-categories > .cat-item > .close').on('click', function(){
+        $('.close').on('click', function(){
             if ($(this).parent().hasClass('current-cat-parent')) {
                 $(this).parent().toggleClass('current-cat-parent');
             } else {

@@ -106,14 +106,17 @@ section.tab.active {display: block;}
     /*background: #f1f1f1;*/
 /*}*/
 
-.widget_product_categories .product-categories > .cat-item{
+.widget_product_categories .product-categories > .cat-item,
+.widget_mgwoocommercebrands > ul > li {
     display: block;
     background: #F1F1F1;
     padding: 10px 15px;
     border-radius: 5px;
 }
 .widget_product_categories .product-categories > .cat-item .open,
-.widget_product_categories .product-categories > .cat-item .close {
+.widget_product_categories .product-categories > .cat-item .close,
+.widget_mgwoocommercebrands > ul > li .open,
+.widget_mgwoocommercebrands > ul > li .close {
     width: 25px;
     height: 25px;
     float: right;
@@ -129,18 +132,25 @@ section.tab.active {display: block;}
 .widget_product_categories .product-categories > .cat-item .open:hover,
 .widget_product_categories .product-categories > .cat-item .close:hover,
 .widget_product_categories .product-categories > .cat-item.current-cat .open,
-.widget_product_categories .product-categories > .cat-item.current-cat .open {
+.widget_product_categories .product-categories > .cat-item.current-cat .open,
+.widget_mgwoocommercebrands > ul > li .open:hover,
+.widget_mgwoocommercebrands > ul > li .close:hover,
+.widget_mgwoocommercebrands > ul > li.current-cat .open,
+.widget_mgwoocommercebrands > ul > li.current-cat .open  {
     cursor: pointer;
     background: #90C962;
 }
 
-.widget_product_categories .product-categories > .cat-item .children {
+.widget_product_categories .product-categories > .cat-item .children,
+.widget_mgwoocommercebrands > ul > li .children {
     display: none;
 }
 
 
 .widget_product_categories .product-categories > .cat-item.current-cat .children,
-.widget_product_categories .product-categories > .cat-item.current-cat-parent .children {
+.widget_product_categories .product-categories > .cat-item.current-cat-parent .children,
+.widget_mgwoocommercebrands > ul > li.current-cat .children,
+.widget_mgwoocommercebrands > ul > li.current-cat-parent .children {
     display: block;
 }
 .open .minus {
@@ -235,7 +245,7 @@ section.tab.active {display: block;}
 /* Cart */
 
 .site-header-right {
-    padding-right: 100px !important;
+    padding-right: 5px !important;
 }
 .site-header-right-link {
     line-height: 20px !important;
@@ -253,7 +263,7 @@ section.tab.active {display: block;}
     color: #333 !important;
     position: absolute !important;
     top: -49px !important;
-    right: -87px !important;
+    left: -87px !important;
 }
 .main-navigation ul ul {
     top: 55px !important;
