@@ -79,7 +79,7 @@
     $(document).ready(function(){
         $('.list-custom-taxonomy-widget > ul > .cat-item ').each(function(){
             var str = $(this).html();
-            var regex = "\(\d+\)";
+            var regex = "(4)";
             $(this).html(str.replace(regex, "<span class='count'>$1</span>"));
         });
         $('.product-categories > .cat-item > .count, .list-custom-taxonomy-widget > ul > .cat-item > .count').each(function(){
