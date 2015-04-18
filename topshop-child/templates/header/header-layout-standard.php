@@ -77,6 +77,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
+        $('.list-custom-taxonomy-widget > ul > .cat-item ').each(function(){
+            var str = $(this).html();
+            var regex = "\(\d+\)";
+            $(this).html(str.replace(regex, "<span class='count'>$1</span>"));
+        });
         $('.product-categories > .cat-item > .count, .list-custom-taxonomy-widget > ul > .cat-item > .count').each(function(){
             var type = 'open';
             if (
