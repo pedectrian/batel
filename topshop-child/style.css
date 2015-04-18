@@ -107,7 +107,7 @@ section.tab.active {display: block;}
 /*}*/
 
 .widget_product_categories .product-categories > .cat-item,
-.widget_mgwoocommercebrands > ul > li {
+.list-custom-taxonomy-widget > ul > .cat-item {
     display: block;
     background: #F1F1F1;
     padding: 10px 15px;
@@ -115,8 +115,8 @@ section.tab.active {display: block;}
 }
 .widget_product_categories .product-categories > .cat-item .open,
 .widget_product_categories .product-categories > .cat-item .close,
-.widget_mgwoocommercebrands > ul > li .open,
-.widget_mgwoocommercebrands > ul > li .close {
+.list-custom-taxonomy-widget > ul > .cat-item .open,
+.list-custom-taxonomy-widget > ul > .cat-item .close {
     width: 25px;
     height: 25px;
     float: right;
@@ -133,24 +133,28 @@ section.tab.active {display: block;}
 .widget_product_categories .product-categories > .cat-item .close:hover,
 .widget_product_categories .product-categories > .cat-item.current-cat .open,
 .widget_product_categories .product-categories > .cat-item.current-cat .open,
-.widget_mgwoocommercebrands > ul > li .open:hover,
-.widget_mgwoocommercebrands > ul > li .close:hover,
-.widget_mgwoocommercebrands > ul > li.current-cat .open,
-.widget_mgwoocommercebrands > ul > li.current-cat .open  {
+.list-custom-taxonomy-widget > ul > .cat-item .open:hover,
+.list-custom-taxonomy-widget > ul > .cat-item .close:hover,
+.list-custom-taxonomy-widget > ul > .cat-item.current-cat .open,
+.list-custom-taxonomy-widget > ul > .cat-item.current-cat .open  {
     cursor: pointer;
     background: #90C962;
 }
 
 .widget_product_categories .product-categories > .cat-item .children,
-.widget_mgwoocommercebrands > ul > li .children {
+.list-custom-taxonomy-widget > ul > .cat-item .children {
     display: none;
 }
 
+.list-custom-taxonomy-widget > ul > .cat-item {
+    padding: 10px;
+    font-weight: bold;
+}
 
 .widget_product_categories .product-categories > .cat-item.current-cat .children,
 .widget_product_categories .product-categories > .cat-item.current-cat-parent .children,
-.widget_mgwoocommercebrands > ul > li.current-cat .children,
-.widget_mgwoocommercebrands > ul > li.current-cat-parent .children {
+.list-custom-taxonomy-widget > ul > .cat-item.current-cat .children,
+.list-custom-taxonomy-widget > ul > .cat-item.current-cat-parent .children {
     display: block;
 }
 .open .minus {
