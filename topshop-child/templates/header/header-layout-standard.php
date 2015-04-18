@@ -79,8 +79,8 @@
     $(document).ready(function(){
         $('.list-custom-taxonomy-widget > ul > .cat-item ').each(function(){
             var str = $(this).html();
-            var regex = "(4)";
-            $(this).html(str.replace(regex, "<span class='count'>$1</span>"));
+            var regex = "([0-9]+)";
+            $(this).html(str.replace(regex, function(x){return "<span class='count'>" + x + "</span>"}));
         });
         $('.product-categories > .cat-item > .count, .list-custom-taxonomy-widget > ul > .cat-item > .count').each(function(){
             var type = 'open';
