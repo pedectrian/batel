@@ -146,6 +146,10 @@ section.tab.active {display: block;}
     display: none;
 }
 
+.mg-brand-wrapper-category > b:first-child {
+    display: none;
+}
+
 .list-custom-taxonomy-widget > ul > .cat-item {
     padding: 10px 15px !important;
     font-weight: bold;
