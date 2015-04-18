@@ -147,7 +147,7 @@ section.tab.active {display: block;}
 }
 
 .list-custom-taxonomy-widget > ul > .cat-item {
-    padding: 10px;
+    padding: 10px !important;
     font-weight: bold;
 }
 
