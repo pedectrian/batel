@@ -25,13 +25,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<thead>
 		<tr>
 			<th scope="col" style="text-align:left; border: 1px solid #eee;"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th scope="col" style="text-align:left; border: 1px solid #eee;"><?php _e( 'Sku', 'woocommerce' ); ?></th>
+			<th scope="col" style="text-align:left; border: 1px solid #eee;"><?php _e( 'SKU', 'woocommerce' ); ?></th>
 			<th scope="col" style="text-align:left; border: 1px solid #eee;"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
 			<th scope="col" style="text-align:left; border: 1px solid #eee;"><?php _e( 'Price', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
-		<?php echo $order->email_order_items_table( true, true ); ?>
+		<?php echo $order->email_order_items_table( false, true ); ?>
 	</tbody>
 	<tfoot>
 		<?php
