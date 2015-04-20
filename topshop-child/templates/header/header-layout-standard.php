@@ -58,6 +58,7 @@
                     </span>
                     <span class="header-cart-checkout<?php echo ( $woocommerce->cart->cart_contents_count > 0 ) ? ' cart-has-items' : ''; ?>">
                         <span><?php _e('Checkout', 'topshop'); ?></span>
+
                         <div class="cart-icon">
                             <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
                         </div>

@@ -259,11 +259,7 @@ section.tab.active {display: block;}
     position: relative !important;
 }
 .header-cart-checkout .fa.fa-shopping-cart {
-    font-size: 70px !important;
-    color: #333 !important;
-    position: absolute !important;
-    top: -49px !important;
-    left: -87px !important;
+    display: none;
 }
 .main-navigation ul ul {
     top: 55px !important;
