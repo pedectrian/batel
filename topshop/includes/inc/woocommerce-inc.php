@@ -17,6 +17,9 @@ function topshop_wc_header_add_to_cart_fragment( $fragments ) {
                 </div>
             </span>
         </a>
+        <div class="cart-icon">
+            <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
+        </div>
     <?php
     $fragments['a.header-cart-contents'] = ob_get_clean();
     
