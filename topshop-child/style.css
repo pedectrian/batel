@@ -304,3 +304,6 @@ body {
     width: 215px !important;
     margin-bottom: 10px !important;
 }
+.woocommerce .quantity input.qty {
+    padding: 0 !important;
+}
