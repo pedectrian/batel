@@ -26,10 +26,10 @@
             }
         });
         
-        $('.header-stick').waypoint('sticky', {
-            offset: 0
-        });
-		
+        //$('.header-stick').waypoint('sticky', {
+        //    offset: 0
+        //});
+        //
     });
     
     $(window).resize(function () {
