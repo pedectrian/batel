@@ -61,6 +61,9 @@
                         <span><?php _e('Checkout', 'topshop'); ?></span>
                     </span>
                 </a>
+                <div class="cart-icon">
+                    <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
+                </div>
             </div>
             
         <?php
