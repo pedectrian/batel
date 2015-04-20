@@ -13,9 +13,6 @@ function topshop_wc_header_add_to_cart_fragment( $fragments ) {
             <span class="header-cart-checkout<?php echo ( $woocommerce->cart->cart_contents_count > 0 ) ? ' cart-has-items' : ''; ?>">
                 <?php _e('Checkout', 'topshop'); ?>
             </span>
-            <div class="cart-icon">
-                <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
-            </div>
         </a>
     <?php
     $fragments['a.header-cart-contents'] = ob_get_clean();
