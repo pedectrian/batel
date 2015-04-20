@@ -313,3 +313,12 @@ body {
     border-radius: 10px;
     padding: 6px;
 }
+.cart-icon {
+    width: 125px;
+    position: absolute;
+    left: -132px;
+    top: -69px;
+}
+.cart-icon img {
+    width: 125px;
+}
