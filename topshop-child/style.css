@@ -245,7 +245,7 @@ section.tab.active {display: block;}
 /* Cart */
 
 .site-header-right {
-    padding: 25px 0 20px;
+    padding: 25px 0 20px !important;
 }
 .site-header-right-link {
     line-height: 20px !important;
