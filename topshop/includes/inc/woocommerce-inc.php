@@ -11,7 +11,7 @@ function topshop_wc_header_add_to_cart_fragment( $fragments ) {
                 <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'topshop'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?>
             </span>
             <span class="header-cart-checkout<?php echo ( $woocommerce->cart->cart_contents_count > 0 ) ? ' cart-has-items' : ''; ?>">
-                <span><?php _e('Checkout', 'topshop'); ?></span> <i class="fan fa-shopping-cart"></i>
+                <span><?php _e('Checkout', 'topshop'); ?></span> <i class="fanfan fa-shopping-cart"></i>
             </span>
         </a>
     <?php
