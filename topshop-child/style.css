@@ -320,12 +320,12 @@ body {
     top: -69px;
 }
 .cart-icon img {
-    width: 125px;
+    width: 115px;
 }
 .header-cart {
-    padding: 0 0 12px 4px;
+    padding: 0 0 12px 4px !important;
 }
 .header-cart-checkout {
-    padding: 0;
-    margin-top: 5px;
+    padding: 0 !important;
+    margin-top: 5px !important;
 }
