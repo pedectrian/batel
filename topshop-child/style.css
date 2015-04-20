@@ -307,3 +307,7 @@ body {
 .woocommerce .quantity input.qty {
     padding: 0 !important;
 }
+
+.shop_table.cart .coupon {
+    width: 380px !important;
+}
