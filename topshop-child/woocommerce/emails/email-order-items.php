@@ -60,9 +60,8 @@ foreach ( $items as $item_id => $item ) :
 
 			?></td>
 			<td style="text-align:center; vertical-align:middle; border: 1px solid #eee;">
-				// SKU
 				<?php if ( $show_sku && is_object( $_product ) && $_product->get_sku() ) {
-					echo ' <b>' . $_product->get_sku() . '</b>b>';
+					echo ' <b>' . $_product->get_sku() . '</b>';
 				}
 			?></td>
 			<td style="text-align:left; vertical-align:middle; border: 1px solid #eee;"><?php echo $item['qty'] ;?></td>
