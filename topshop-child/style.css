@@ -311,3 +311,9 @@ body {
 .shop_table.cart .coupon {
     width: 380px !important;
 }
+.menu-topmenu-container {
+    background: #90C962 !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 6px;
+}
