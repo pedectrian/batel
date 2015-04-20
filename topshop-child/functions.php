@@ -116,10 +116,9 @@ add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 add_filter( 'body_class', 'batel_layout_class' );
 
-addfilter( 'woocommerce_pay_order_button_text', 'batel_pay_order_button_text' ); // 2.1 +
+add_filter( 'woocommerce_pay_order_button_text', 'batel_pay_order_button_text' ); // 2.1 +
 
 function batel_pay_order_button_text() {
-
     return __( 'Заказать', 'woocommerce' );
 }
 ?>
