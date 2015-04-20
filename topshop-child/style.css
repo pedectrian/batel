@@ -245,7 +245,7 @@ section.tab.active {display: block;}
 /* Cart */
 
 .site-header-right {
-    padding-right: 5px !important;
+    padding: 25px 0 20px;
 }
 .site-header-right-link {
     line-height: 20px !important;
@@ -317,7 +317,7 @@ body {
     width: 125px;
     position: absolute;
     left: -132px;
-    top: -69px;
+    top: -50px;
 }
 .cart-icon img {
     width: 115px;
