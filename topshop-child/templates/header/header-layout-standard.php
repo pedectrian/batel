@@ -49,7 +49,7 @@
             <?php if ( is_user_logged_in() ) { ?>
                 <div class="site-header-right-link"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','topshop'); ?>"><?php _e('My Account','topshop'); ?></a></div>
             <?php } else { ?>
-                <div class="site-header-right-link"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login','topshop'); ?>"><?php _e('Sign In / Register','topshop'); ?></a></div>
+                <div class="site-header-right-link"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login','topshop'); ?>"><?php _e('Вход / Регистрация','topshop'); ?></a></div>
             <?php } ?>
             <div class="header-cart">
                 <a class="header-cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'topshop'); ?>">
@@ -57,7 +57,10 @@
                         <?php echo sprintf(_e('items: %d ', $woocommerce->cart->cart_contents_count, 'topshop'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?>
                     </span>
                     <span class="header-cart-checkout<?php echo ( $woocommerce->cart->cart_contents_count > 0 ) ? ' cart-has-items' : ''; ?>">
-                        <span><?php _e('Checkout', 'topshop'); ?></span> <i class="fa fa-shopping-cart"></i>
+                        <span><?php _e('Checkout', 'topshop'); ?></span>
+                        <div class="cart-icon">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
+                        </div>
                     </span>
                 </a>
             </div>
