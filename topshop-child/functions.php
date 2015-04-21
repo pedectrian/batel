@@ -118,7 +118,7 @@ add_filter( 'body_class', 'batel_layout_class' );
 
 add_filter( 'woocommerce_order_button_text1', 'batel_order_button_text', 10 ); // 2.1 +
 add_filter( 'woocommerce_order_button_html', 'batel_order_button_html', 10 );
-add_filter( 'woocommerce_thankyou_order_received_text', 'thank-you-batel', 10);
+add_filter( 'woocommerce_thankyou_order_received_text', 'thank_you_batel', 10);
 function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
 }
