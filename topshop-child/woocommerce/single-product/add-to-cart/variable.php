@@ -60,7 +60,6 @@ global $product, $post;
 						</select>
 							<?php
 								foreach ( $available_variations as $option ) {
-									var_dump($option);
 									$opt = $options['attributes'][0]['attributes_pa_shades'];
 									echo '<span class="variation-img" data-variation="' . esc_attr( sanitize_title( $opt ) ) . '"><img title="' . $opt . '" src="' . $option['image_src'] . '"/></span>';
 								}
