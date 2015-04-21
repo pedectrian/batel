@@ -333,10 +333,10 @@ body {
     font-weight: bold;
     font-size: 16px;
 }
-.variation-img:hover {
+.variation-img:hover img{
     cursor: pointer;
     box-shadow: 0 0 5px #000;
 }
-.var-selected {
+.var-selected img{
     box-shadow: 0 0 5px #000;
 }
