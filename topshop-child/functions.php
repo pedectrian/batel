@@ -116,7 +116,7 @@ add_action( 'after_setup_theme', 'batel_setup' );
 add_action( 'batel_header', 'batel_site_branding', 20 );
 add_filter( 'body_class', 'batel_layout_class' );
 
-add_filter( 'woocommerce_order_button_text', 'batel_order_button_text', 10 ); // 2.1 +
+add_filter( 'woocommerce_order_button_text1', 'batel_order_button_text', 10 ); // 2.1 +
 add_filter( 'woocommerce_order_button_html', 'batel_order_button_html', 10 );
 function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
