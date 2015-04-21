@@ -73,6 +73,8 @@ global $product, $post;
 						<script>
 							$(document).ready(function(){
 								$('.variation-img').click(function(){
+									$('.var-selected').removeClass('var-selected');
+									$(this).addClass('var-selected');
 									var select = $('#<?php echo esc_attr( sanitize_title( $name ) ); ?>');
 									select.val($(this).attr('data-variation'));
 									select.trigger('change')

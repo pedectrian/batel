@@ -335,5 +335,8 @@ body {
 }
 .variation-img:hover {
     cursor: pointer;
-    box-shadow: 40px;
+    box-shadow: 0 0 5px #000;
+}
+.var-selected {
+    box-shadow: 0 0 5px #000;
 }
