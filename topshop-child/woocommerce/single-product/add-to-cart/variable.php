@@ -61,7 +61,6 @@ global $product, $post;
 							<?php
 								foreach ( $available_variations as $option ) {
 									$opt = $option['attributes']['attributes_pa_shades'];
-									var_dump($option['attributes']);
 									echo '<span class="variation-img" data-variation="' . esc_attr( sanitize_title( $opt ) ) . '"><img title="' . $opt . '" src="' . $option['image_src'] . '"/></span>';
 								}
 							?>
