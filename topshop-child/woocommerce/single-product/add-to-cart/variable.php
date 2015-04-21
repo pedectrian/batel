@@ -61,7 +61,7 @@ global $product, $post;
 							<?php print_r($available_variations); ?>
 
 							<?php
-								foreach ( $options as $option ) {
+								foreach ( $available_variations as $option ) {
 									echo '<img src="' . $option['image_src'] . '"/>';
 								}
 							?>
