@@ -118,14 +118,14 @@ add_filter( 'body_class', 'batel_layout_class' );
 
 add_filter( 'woocommerce_order_button_text1', 'batel_order_button_text', 10 ); // 2.1 +
 add_filter( 'woocommerce_order_button_html', 'batel_order_button_html', 10 );
-//add_filter( 'woocommerce_thankyou_order_received_text', 'thank_you_batel', 10);
+add_filter( 'woocommerce_thankyou_order_received_text', 'batel_thank_you', 10);
 function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
 }
 function batel_order_button_html() {
     return '<input type="submit" class="button alt" name="woocommerce_checkout_place_order1111" id="place_order111" value="Заказать" data-value="Заказать" />';
 }
-function thank_you_batel() {
-    return '<div class="thank-you-batel">' .__( 'Thank you. Your order has been received.', 'woocommerce' ) . '</div>';
+function batel_thank_you() {
+    return '<div class="thank-you-batel">Спасибо. Ваш заказ был принят.</div>';
 }
 ?>
