@@ -58,7 +58,8 @@ global $product, $post;
 								}
 							?>
 						</select>
-							<?php echo get_the_post_thumbnail( $post->ID ); ?>
+							<?php var_dump($available_variations); ?>
+							<?php echo '<img src="' . $variation['image_src'] . '"/>'; ?>
 							<?php
 							if ( sizeof( $attributes ) === $loop ) {
 								echo '<a class="reset_variations" href="#reset">' . __( 'Clear selection', 'woocommerce' ) . '</a>';
