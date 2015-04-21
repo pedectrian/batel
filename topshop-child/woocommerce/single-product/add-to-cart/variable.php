@@ -73,7 +73,7 @@ global $product, $post;
 								$('.variation-img').click(function(){
 									console.log('#<?php echo esc_attr( sanitize_title( $name ) ); ?>');
 									console.log($(this).data('variation'));
-									$('#<?php echo esc_attr( sanitize_title( $name ) ); ?>').val($(this).data('data-variation'));
+									$('#<?php echo esc_attr( sanitize_title( $name ) ); ?>').val($(this).attr('data-variation'));
 								})
 							});
 						</script>
