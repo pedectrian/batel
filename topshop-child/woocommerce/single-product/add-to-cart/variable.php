@@ -58,7 +58,6 @@ global $product, $post;
 								}
 							?>
 						</select>
-							<?php print_r($available_variations); ?>
 
 							<?php
 								foreach ( $available_variations as $option ) {
