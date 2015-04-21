@@ -73,9 +73,9 @@ global $product, $post;
 						<script>
 							$(document).ready(function(){
 								$('.variation-img').click(function(){
-									console.log('#<?php echo esc_attr( sanitize_title( $name ) ); ?>');
-									console.log($(this).data('variation'));
-									$('#<?php echo esc_attr( sanitize_title( $name ) ); ?>').val($(this).attr('data-variation'));
+									var select = $('#<?php echo esc_attr( sanitize_title( $name ) ); ?>');
+									select.val($(this).attr('data-variation'));
+									select.trigger('change')
 								})
 							});
 						</script>
