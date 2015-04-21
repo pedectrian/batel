@@ -316,7 +316,7 @@ body {
 .cart-icon {
     width: 125px;
     position: absolute;
-    left: -126px;
+    left: -116px;
     top: -50px;
 }
 .cart-icon img {
@@ -332,4 +332,8 @@ body {
 .thank-you-batel {
     font-weight: bold;
     font-size: 16px;
+}
+.variation-img:hover {
+    cursor: pointer;
+    box-shadow: 40px;
 }
