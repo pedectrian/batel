@@ -58,11 +58,9 @@ global $product, $post;
 								}
 							?>
 						</select>
-							<?php print_r($available_variations); ?>
-
 							<?php
 								foreach ( $available_variations as $option ) {
-									echo '<span class="variation-img" data-variation="' . esc_attr( sanitize_title( $option ) ) . '"><img src="' . $option['image_src'] . '"/></span>';
+									echo '<span class="variation-img" data-variation="' . esc_attr( sanitize_title( $option ) ) . '"><img title="' . esc_html( apply_filters( 'woocommerce_variation_option_name', $option ) ) . '" src="' . $option['image_src'] . '"/></span>';
 								}
 							?>
 							<?php
