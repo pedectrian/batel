@@ -23,7 +23,7 @@ global $product, $post;
 				<?php $loop = 0; foreach ( $attributes as $name => $options ) : $loop++; ?>
 					<tr>
 						<td class="label"><label for="<?php echo sanitize_title( $name ); ?>"><?php echo wc_attribute_label( $name ); ?></label></td>
-						<td class="value"><select id="<?php echo esc_attr( sanitize_title( $name ) ); ?>" name="attribute_<?php echo sanitize_title( $name ); ?>" data-attribute_name="attribute_<?php echo sanitize_title( $name ); ?>">
+						<td class="value"><select style="display: none;" id="<?php echo esc_attr( sanitize_title( $name ) ); ?>" name="attribute_<?php echo sanitize_title( $name ); ?>" data-attribute_name="attribute_<?php echo sanitize_title( $name ); ?>">
 							<option value=""><?php echo __( 'Choose an option', 'woocommerce' ) ?>&hellip;</option>
 							<?php
 								if ( is_array( $options ) ) {
@@ -58,17 +58,26 @@ global $product, $post;
 								}
 							?>
 						</select>
+							<?php print_r($available_variations); ?>
 
 							<?php
 								foreach ( $available_variations as $option ) {
-									echo '<img src="' . $option['image_src'] . '"/>';
+									echo '<span class="variation-img" data-variation="' . esc_attr( sanitize_title( $option ) ) . '"><img src="' . $option['image_src'] . '"/></span>';
 								}
 							?>
 							<?php
 							if ( sizeof( $attributes ) === $loop ) {
 								echo '<a class="reset_variations" href="#reset">' . __( 'Clear selection', 'woocommerce' ) . '</a>';
 							}
-						?></td>
+						?>
+						<script>
+							$(document).ready(function(){
+								$('.variation-img').click(function(){
+									$('#<?php echo esc_attr( sanitize_title( $name ) ); ?>').val($(this).data('variation'));
+								})
+							});
+						</script>
+						</td>
 					</tr>
 		        <?php endforeach;?>
 			</tbody>
