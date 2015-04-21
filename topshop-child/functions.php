@@ -117,8 +117,11 @@ add_action( 'batel_header', 'batel_site_branding', 20 );
 add_filter( 'body_class', 'batel_layout_class' );
 
 add_filter( 'woocommerce_order_button_text', 'batel_order_button_text', 1 ); // 2.1 +
-
+add_filter( 'woocommerce_order_button_html', 'batel_order_button_html', 1 );
 function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
+}
+function batel_order_button_html() {
+    return '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Заказать" data-value="Заказать" />' );
 }
 ?>
