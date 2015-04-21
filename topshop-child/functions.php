@@ -122,6 +122,6 @@ function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
 }
 function batel_order_button_html() {
-    return '<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Заказать" data-value="Заказать" />';
+    return '1111111<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Заказать" data-value="Заказать" />';
 }
 ?>
