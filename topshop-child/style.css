@@ -224,6 +224,7 @@ section.tab.active {display: block;}
 .main-navigation ul.nav-menu > li > a {
     font-size: 17px;
     line-height: 16px;
+    color: #5A371F !important;
 }
 #site-navigation {
     margin: 10px 0;
