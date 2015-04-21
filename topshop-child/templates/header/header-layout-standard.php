@@ -62,7 +62,7 @@
                 </a>
 
                 <a class="cart-icon"  href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'topshop'); ?>">
-                    <img src="<?= get_stylesheet_directory_uri(); ?>/img/shopping-cart-icon.png" />
+                    <img src="<?= get_stylesheet_directory_uri(); ?>/img/red-shopping-bag-128x128.png" />
                 </a>
             </div>
             
