@@ -122,7 +122,7 @@ add_filter( 'woocommerce_thankyou_order_received_text', 'batel_thank_you', 10);
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 function new_excerpt_more( $more ) {
-    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'topshop') . '</a>';
+    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Читать далее', 'topshop') . '</a>';
 }
 function batel_order_button_text() {
     return __( 'Заказать', 'woocommerce' );
