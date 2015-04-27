@@ -355,4 +355,5 @@ body {
     left: 175px;
     width: 450px;
     font-size: 20px !important;
+    text-transform: uppercase !important;
 }
