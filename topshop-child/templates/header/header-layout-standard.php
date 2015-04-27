@@ -22,10 +22,12 @@
                 
             </div>
             <div class="clearboth"></div>
-
-            <div class="search-block">
-                <?php get_search_form(); ?>
-            </div>
+            
+            <?php if( get_theme_mod( 'topshop-header-search', false ) ) : ?>
+                <div class="search-block">
+                    <?php get_search_form(); ?>
+                </div>
+            <?php endif; ?>
             
         </div>
         
