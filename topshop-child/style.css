@@ -351,9 +351,9 @@ body {
 .site-description {
     position: absolute;
     clip: inherit !important;
-    top: 52px;
+    top: 56px;
     left: 175px;
     width: 500px;
-    font-size: 20px !important;
+    font-size: 16px !important;
     text-transform: uppercase !important;
 }
