@@ -344,3 +344,14 @@ body {
 .var-selected img{
     box-shadow: 0 0 5px #000;
 }
+
+.topshop-header-layout-standard .site-header-left {
+    position: relative;
+}
+.site-description {
+    position: absolute;
+    clip: inherit !important;
+    top: 132px;
+    left: 350px;
+    font-size: 20px !important;
+}
