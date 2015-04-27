@@ -346,7 +346,7 @@ body {
 }
 
 .topshop-header-layout-standard .site-header-left {
-    position: relative;
+    position: relative !important;
 }
 .site-description {
     position: absolute;
