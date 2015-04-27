@@ -11,6 +11,7 @@ if ( ! function_exists( 'batel_site_branding' ) ) {
             <a href="http://batel-store.ru/" class="site-logo-link" rel="home" itemprop="url">
                 <img width="199" height="131" src="http://batel-store.ru/wp-content/uploads/2015/03/logo2.png" class="site-logo attachment-full" alt="white-logo-v2" data-size="full" itemprop="logo">
             </a>
+            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
        <?php } else { ?>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
